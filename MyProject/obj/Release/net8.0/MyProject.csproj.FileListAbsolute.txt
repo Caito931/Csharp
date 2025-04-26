@@ -1,0 +1,15 @@
+/home/caio/Programing/Csharp/MyProject/bin/Release/net8.0/MyProject
+/home/caio/Programing/Csharp/MyProject/bin/Release/net8.0/MyProject.deps.json
+/home/caio/Programing/Csharp/MyProject/bin/Release/net8.0/MyProject.runtimeconfig.json
+/home/caio/Programing/Csharp/MyProject/bin/Release/net8.0/MyProject.dll
+/home/caio/Programing/Csharp/MyProject/bin/Release/net8.0/MyProject.pdb
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.GeneratedMSBuildEditorConfig.editorconfig
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.AssemblyInfoInputs.cache
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.AssemblyInfo.cs
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.csproj.CoreCompileInputs.cache
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.sourcelink.json
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.dll
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/refint/MyProject.dll
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.pdb
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/MyProject.genruntimeconfig.cache
+/home/caio/Programing/Csharp/MyProject/obj/Release/net8.0/ref/MyProject.dll
