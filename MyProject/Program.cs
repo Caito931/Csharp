@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Net.WebSockets;
 
 namespace MyProject 
 {
@@ -7,9 +8,18 @@ namespace MyProject
     {
         static void Main()
         {
-            Console.WriteLine("I like pizza!");
-            Console.WriteLine("It is really good!");
-            Console.Beep();
+            Console.Write("Oi");
+            Console.WriteLine("Hello!");
+
+            // This is a comment
+            /* 
+            This is a 
+            multiline comment
+            */
+
+            Console.WriteLine("Caio\nVictor");
+
+            Console.ReadKey();
         }
     }
 }
