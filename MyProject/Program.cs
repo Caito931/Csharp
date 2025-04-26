@@ -8,28 +8,40 @@ namespace MyProject
     {
         static void Main()
         {
-            // String methods
-            String fullName = "Choraumm Mt";
-            String phoneNumber = "123-456-7890";
+            // If statment = decision making
 
-            // fullName = fullName.ToUpper();
-            // fullName = fullName.ToLower();
-            // Console.WriteLine(fullName);
+            // Console.WriteLine("Please enter your age: ");
+            // int age = Convert.ToInt32(Console.ReadLine());
 
-            // phoneNumber = phoneNumber.Replace("-", "");
-            // Console.WriteLine(phoneNumber);
+            // if (age > 100)
+            // {
+            //     Console.WriteLine("You are too old to sign up!");
+            // }
+            // else if (age >= 18) 
+            // {
+            //     Console.WriteLine("You are now signed up!");
+            // }
+            // else if (age < 0) 
+            // {
+            //     Console.WriteLine("You haven't been born yet!");
+            // }
+            // else 
+            // {
+            //     Console.WriteLine("You must be 18+ to sign up!");
+            // }
 
-            // String userName = fullName.Insert(0, "Mr.");
-            // Console.WriteLine(userName);
+            Console.WriteLine("Please enter your name: ");
+            String name = Console.ReadLine();
 
-            // int lenght = fullName.Length;
-            // Console.WriteLine(lenght);
+            if (name != "") 
+            {
+                Console.WriteLine("Hello " + name);
+            }
+            else 
+            {  
+                Console.WriteLine("You did not enter your name!");
+            }
 
-            String firstName = fullName.Substring(0, 8);
-            Console.WriteLine(firstName);
-
-            String lastName = fullName.Substring(9, 2);
-            Console.WriteLine(lastName);
 
             Console.ReadKey();
         }
