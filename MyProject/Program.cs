@@ -8,17 +8,28 @@ namespace MyProject
     {
         static void Main()
         {
-            // Hypotenuse
+            // String methods
+            String fullName = "Choraumm Mt";
+            String phoneNumber = "123-456-7890";
 
-            Console.WriteLine("Enter side A: ");
-            double a = Convert.ToDouble(Console.ReadLine());
+            // fullName = fullName.ToUpper();
+            // fullName = fullName.ToLower();
+            // Console.WriteLine(fullName);
 
-            Console.WriteLine("Enter side B: ");
-            double b = Convert.ToDouble(Console.ReadLine());
+            // phoneNumber = phoneNumber.Replace("-", "");
+            // Console.WriteLine(phoneNumber);
 
-            double c = Math.Sqrt((a*a) + (b*b));
+            // String userName = fullName.Insert(0, "Mr.");
+            // Console.WriteLine(userName);
 
-            Console.WriteLine("The hypotenuse is: " + c);
+            // int lenght = fullName.Length;
+            // Console.WriteLine(lenght);
+
+            String firstName = fullName.Substring(0, 8);
+            Console.WriteLine(firstName);
+
+            String lastName = fullName.Substring(9, 2);
+            Console.WriteLine(lastName);
 
             Console.ReadKey();
         }
