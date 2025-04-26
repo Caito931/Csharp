@@ -8,27 +8,20 @@ namespace MyProject
     {
         static void Main()
         {
-            // Arithmetic Operators
-            double friends = 5;
+            // Math
+            double x = 3.99;
+            double y = 5;
 
-            //friends = friends + 1;
-            //friends += 2;
-            //friends++;
+            //double a = Math.Pow(x, 2);
+            //double b = Math.Sqrt(x);
+            //double c = Math.Abs(x);
+            //double d = Math.Round(x);
+            //double e = Math.Ceiling(x);
+            //double f = Math.Floor(x);
+            //double g = Math.Max(x, y);
+            double h = Math.Min(x, y);
 
-            //friends = friends - 1;
-            //friends -= 1;
-            //friends--;
-
-            //friends = friends * 2;
-            //friends *= 2;
-
-            //friends = friends / 2;
-            //friends /= 2;
-
-            //friends = friends % 2;
-            //friends %= 2;
-
-            Console.WriteLine(friends);
+            Console.WriteLine(h);
 
             Console.ReadKey();
         }
