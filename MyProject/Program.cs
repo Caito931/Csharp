@@ -8,17 +8,27 @@ namespace MyProject
     {
         static void Main()
         {
-            // User Input
+            // Arithmetic Operators
+            double friends = 5;
 
-            Console.WriteLine("What's your name?");
-            String name = Console.ReadLine();
+            //friends = friends + 1;
+            //friends += 2;
+            //friends++;
 
-            Console.WriteLine("What's your age?");
-            int age = Convert.ToInt32(Console.ReadLine());
+            //friends = friends - 1;
+            //friends -= 1;
+            //friends--;
 
-            Console.WriteLine("Hello " + name);
-            Console.WriteLine("Your are " + age + " years old");
+            //friends = friends * 2;
+            //friends *= 2;
 
+            //friends = friends / 2;
+            //friends /= 2;
+
+            //friends = friends % 2;
+            //friends %= 2;
+
+            Console.WriteLine(friends);
 
             Console.ReadKey();
         }
