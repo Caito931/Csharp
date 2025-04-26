@@ -1,5 +1,4 @@
-﻿// See https://aka.ms/new-console-template for more information
-
+﻿
 using System;
 
 namespace MyProject 
@@ -8,7 +7,9 @@ namespace MyProject
     {
         static void Main()
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine("I like pizza!");
+            Console.WriteLine("It is really good!");
+            Console.Beep();
         }
     }
 }
