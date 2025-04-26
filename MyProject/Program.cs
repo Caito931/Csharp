@@ -8,40 +8,37 @@ namespace MyProject
     {
         static void Main()
         {
-            // If statment = decision making
+            // Switch
+            Console.WriteLine("What day is it today?: ");
+            String day = Console.ReadLine();
 
-            // Console.WriteLine("Please enter your age: ");
-            // int age = Convert.ToInt32(Console.ReadLine());
-
-            // if (age > 100)
-            // {
-            //     Console.WriteLine("You are too old to sign up!");
-            // }
-            // else if (age >= 18) 
-            // {
-            //     Console.WriteLine("You are now signed up!");
-            // }
-            // else if (age < 0) 
-            // {
-            //     Console.WriteLine("You haven't been born yet!");
-            // }
-            // else 
-            // {
-            //     Console.WriteLine("You must be 18+ to sign up!");
-            // }
-
-            Console.WriteLine("Please enter your name: ");
-            String name = Console.ReadLine();
-
-            if (name != "") 
+            switch(day) 
             {
-                Console.WriteLine("Hello " + name);
+                case "Monday":
+                    Console.WriteLine("It's Monday!");
+                break;
+                case "Tuesday":
+                    Console.WriteLine("It's Tuesday!");
+                break;
+                case "Wednesday":
+                    Console.WriteLine("It's Wednesday!");
+                break;
+                case "Thursday":
+                    Console.WriteLine("It's Thursday!");
+                break;
+                case "Friday":
+                    Console.WriteLine("It's Friday!");
+                break;
+                case "Saturday":
+                    Console.WriteLine("It's Saturday!");
+                break;
+                case "Sunday":
+                    Console.WriteLine("It's Sunday!");
+                break;
+                default:
+                    Console.WriteLine(day + " is not a day!");
+                break;
             }
-            else 
-            {  
-                Console.WriteLine("You did not enter your name!");
-            }
-
 
             Console.ReadKey();
         }
