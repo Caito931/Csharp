@@ -7,7 +7,19 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8571b4c-2332-485c-9979-51dbd42f4547" name="Changes" comment="Lesson 15" />
+    <list default="true" id="b8571b4c-2332-485c-9979-51dbd42f4547" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/Program.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfoInputs.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.sourcelink.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/ref/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/ref/MyProject.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/refint/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/refint/MyProject.dll" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,24 +32,24 @@
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "history": [
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;history&quot;: [
     {
-      "state": "OPEN",
-      "author": "Caito931"
+      &quot;state&quot;: &quot;OPEN&quot;,
+      &quot;author&quot;: &quot;Caito931&quot;
     }
   ],
-  "lastFilter": {
-    "state": "OPEN",
-    "author": "Caito931"
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;author&quot;: &quot;Caito931&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Caito931/Csharp.git",
-    "accountId": "f1943b6f-9594-459a-9ad9-87d740c341a4"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Caito931/Csharp.git&quot;,
+    &quot;accountId&quot;: &quot;f1943b6f-9594-459a-9ad9-87d740c341a4&quot;
   }
-}]]></component>
+}</component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock:///home/caio/Programing/Csharp/MyProject/Program.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///home/caio/Programing/Csharp/MyProject/Program.cs" root0="SKIP_HIGHLIGHTING" />
@@ -48,9 +60,9 @@
     <setting file="mock:///home/caio/Programing/Csharp/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfo.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 6
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 6
+}</component>
   <component name="ProjectId" id="2wIISs4AFyL5aSZBJkyNsNZgZV5" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -62,7 +74,7 @@
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "Rebasing main",
+    "git-widget-placeholder": "main",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
