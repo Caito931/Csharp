@@ -8,25 +8,68 @@ namespace MyProject
     {
         static void Main()
         {
-            // Nested Loops
+            // Number Guessing Game
 
-            Console.Write("How many rows?: ");
-            int rows = Convert.ToInt32(Console.ReadLine());
+            Random random = new Random();
+            bool playAgain = true;
+            int min = 1;
+            int max = 100;
+            int guess;
+            int number;
+            int guesses;
+            String response;
 
-            Console.Write("How many columns?: ");
-            int columns = Convert.ToInt32(Console.ReadLine());
-
-            Console.Write("What symbol: ");
-            char symbol = Convert.ToChar(Console.ReadLine());
-
-            for (int i = 0; i < rows; i++)
+            // While User Wants to Play
+            while (playAgain)
             {
-                for (int j = 0; j < columns; j++)
+                // Setup
+                guess = 0;
+                guesses = 0;
+                response = "";
+                number = random.Next(min, max+1);
+
+                // While User Doens't Guess Correctly
+                while (guess != number)
                 {
-                    Console.Write(symbol);
+                    // Ask
+                    Console.WriteLine("Guess a number between " + min + " - " + max + " : ");
+                    guess = Convert.ToInt32(Console.ReadLine());
+                    Console.WriteLine("Guess: " + guess);
+
+                    // Hint
+                    if (guess > number)
+                    {
+                        Console.WriteLine(guess + " is to high!");
+                    }
+                    else if (guess < number)
+                    {
+                        Console.WriteLine(guess + " is to low!");
+                    }
+
+                    guesses += 1;
                 }
-                Console.WriteLine();
+
+                // Final Part
+                Console.WriteLine("Number: " + number);
+                Console.WriteLine("You win!");
+                Console.WriteLine("Guesses: " + guesses);
+                Console.WriteLine("Would yu like to play again? (y/n)");
+                response = Console.ReadLine();
+                response = response.ToLower();
+
+                // Response
+                if (response == "y")
+                {
+                    playAgain = true;
+                }
+                else
+                {
+                    playAgain = false;
+                }
             }
+
+            // Final Feedback
+            Console.WriteLine("Thanks for playing! .. I guess");
             
             Console.ReadKey(); 
         } 
