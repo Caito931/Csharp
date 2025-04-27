@@ -9,16 +9,24 @@ namespace MyProject
     {
         static void Main()
         {
-            // Foreach loop
-            
-            String[] cars = {"BMW", "Mustang", "Corvette"};
+            // Method
 
-            foreach (String car in cars)
-            {
-                Console.WriteLine(car);
-            }
+            String name = "Choraumm";
+            int age = 100;
+            
+            singHappyBirthday(name, age);
             
             Console.ReadKey(); 
-        } 
+        }
+
+        static void singHappyBirthday(String birthdayBOY, int yearsOld)
+        {
+            Console.WriteLine("Happy Birthday to you!");
+            Console.WriteLine("Happy Birthday to you!");
+            Console.WriteLine("Happy Birthday dear " + birthdayBOY);
+            Console.WriteLine("You are " + yearsOld + " years old!");
+            Console.WriteLine("Happy Birthday to you!");
+            Console.WriteLine();
+        }
     } 
 }
