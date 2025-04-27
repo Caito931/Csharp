@@ -1,27 +1,23 @@
 ﻿
 using System;
 using System.Net.WebSockets;
-
+using System; 
+using System.Net.WebSockets; 
 namespace MyProject 
 {
     class Program
     {
         static void Main()
         {
-            // for loop
-            /*
-            for (int i = 1; i <= 10; i+=3)
+            // While loop
+            String name = "";
+            while (name == "")
             {
-                Console.WriteLine(i);
-            }
-            */
-
-            for (int i = 10; i > 0; i--)
-            {
-                Console.WriteLine(i);
-            }
-
-            Console.WriteLine("Happy new year!");
+                Console.Write("Enter your name: "); 
+                name = Console.ReadLine();
+            } 
+            
+            Console.WriteLine("Hello " + name);
             
             Console.ReadKey(); 
         } 
