@@ -9,24 +9,31 @@ namespace MyProject
     {
         static void Main()
         {
-            // Method
+            // Return
 
-            String name = "Choraumm";
-            int age = 100;
+            double x;
+            double y;
+            double result;
+
+            Console.WriteLine("Enter in number 1: ");
+            x = Convert.ToDouble(Console.ReadLine());
             
-            singHappyBirthday(name, age);
+            Console.WriteLine("Enter in number 2: ");
+            y = Convert.ToDouble(Console.ReadLine());
+
+            result = Multiply(x, y);
+
+            Console.WriteLine("The result is: " + result);
             
             Console.ReadKey(); 
         }
 
-        static void singHappyBirthday(String birthdayBOY, int yearsOld)
+        static double Multiply(double x, double y)
         {
-            Console.WriteLine("Happy Birthday to you!");
-            Console.WriteLine("Happy Birthday to you!");
-            Console.WriteLine("Happy Birthday dear " + birthdayBOY);
-            Console.WriteLine("You are " + yearsOld + " years old!");
-            Console.WriteLine("Happy Birthday to you!");
-            Console.WriteLine();
+            //double z = x * y;
+            //return z;
+            return x * y;
         }
+
     } 
 }

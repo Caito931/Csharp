@@ -7,7 +7,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8571b4c-2332-485c-9979-51dbd42f4547" name="Changes" comment="Lesson 22">
+    <list default="true" id="b8571b4c-2332-485c-9979-51dbd42f4547" name="Changes" comment="Lesson 23">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/Program.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.dll" afterDir="false" />
@@ -182,7 +182,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745777673103</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Lesson 23">
+      <option name="closed" value="true" />
+      <created>1745778015635</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1745778015635</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,6 +234,7 @@
     <MESSAGE value="Lesson 20" />
     <MESSAGE value="Lesson 21" />
     <MESSAGE value="Lesson 22" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 22" />
+    <MESSAGE value="Lesson 23" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 23" />
   </component>
 </project>
