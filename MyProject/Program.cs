@@ -9,18 +9,13 @@ namespace MyProject
     {
         static void Main()
         {
-            // Arrays
+            // Foreach loop
+            
+            String[] cars = {"BMW", "Mustang", "Corvette"};
 
-            String[] cars = new string[3];
-            // String[] cars = {"BMW", "Mustang", "Corvette"};
-
-            cars[0] = "Tesla";
-            cars[1] = "Mustang";
-            cars[2] = "Corvette";
-
-            for (int i = 0; i < cars.Length; i++)
+            foreach (String car in cars)
             {
-                Console.WriteLine(cars[i]);
+                Console.WriteLine(car);
             }
             
             Console.ReadKey(); 
