@@ -10,15 +10,16 @@ namespace MyProject
     {
         static void Main()
         {
-            // Conditional Operator
-            // (condition) ? x : y
+            // String interpolation
+            String firstName = "Choraumm";
+            String lastName = "MT";
+            int age = 100;
+            
+            //Console.WriteLine("Hello " + firstName + " " + lastName + ".");
+            //Console.WriteLine("You are " + age + " years old.");
 
-            double temperature = 20;
-            String message;
-
-            message = (temperature >= 15) ? "It's warm outside!" : "It's cold outside!";
-
-            Console.WriteLine(message);
+            Console.WriteLine($"Hello {firstName} {lastName}.");
+            Console.WriteLine($"You are {age,-10} years old.");
 
             Console.ReadKey(); 
         }
