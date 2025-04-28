@@ -9,6 +9,12 @@ namespace MyProject
         public String name = "";
         public int age;
         
+        public Human(String name, int age) 
+        {
+            this.name = name;
+            this.age = age;
+        }
+
         public void Eat()
         {
             Console.WriteLine(name + " is eating");

@@ -3,6 +3,7 @@ using System;
 using System.ComponentModel.Design;
 using System.IO.Pipes;
 using System.Net.WebSockets;
+using System.Text.RegularExpressions;
 
 namespace MyProject 
 {
@@ -10,20 +11,13 @@ namespace MyProject
     {
         static void Main()
         {
-            // Object
+            // Constructor
 
-            Human human1 = new Human();
-            Human human2 = new Human();
+            Car car1 = new Car("Ford", "Mustang", 2022, "Red");
+            Car car2 = new Car("Chevy", "Corette", 2021, "Blue");
 
-            human1.name = "Rick";
-            human1.age = 65;
-            human2.name = "Morty";
-            human2.age = 16;
-
-            human1.Eat();
-            human1.Sleep();
-            human2.Eat();
-            human2.Sleep();
+            car1.Drive();
+            car2.Drive();
 
             Console.ReadKey(); 
         }
