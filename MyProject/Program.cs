@@ -9,30 +9,25 @@ namespace MyProject
     {
         static void Main()
         {
-            // Return
+            // Method Overloading
 
-            double x;
-            double y;
-            double result;
+            double total;
 
-            Console.WriteLine("Enter in number 1: ");
-            x = Convert.ToDouble(Console.ReadLine());
-            
-            Console.WriteLine("Enter in number 2: ");
-            y = Convert.ToDouble(Console.ReadLine());
+            total = Multiply(2, 3, 4);
 
-            result = Multiply(x, y);
-
-            Console.WriteLine("The result is: " + result);
-            
+            Console.WriteLine(total);
             Console.ReadKey(); 
         }
-
+        
         static double Multiply(double x, double y)
         {
             //double z = x * y;
             //return z;
             return x * y;
+        }
+        static double Multiply(double a, double b, double c)
+        {
+            return a * b * c;
         }
 
     } 

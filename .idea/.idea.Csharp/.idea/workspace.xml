@@ -7,18 +7,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b8571b4c-2332-485c-9979-51dbd42f4547" name="Changes" comment="Lesson 23">
+    <list default="true" id="b8571b4c-2332-485c-9979-51dbd42f4547" name="Changes" comment="Lesson 24">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Csharp/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Csharp/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/Program.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/Program.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/bin/Debug/net8.0/MyProject.pdb" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfoInputs.cache" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.AssemblyInfoInputs.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.sourcelink.json" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/MyProject.sourcelink.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/ref/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/ref/MyProject.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/refint/MyProject.dll" beforeDir="false" afterPath="$PROJECT_DIR$/MyProject/obj/Debug/net8.0/refint/MyProject.dll" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,22 +61,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    ".NET Project.MyProject.executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "settings.editor.selected.configurable": "reference.settings.ide.settings.file-colors",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;.NET Project.MyProject.executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.ide.settings.file-colors&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager">
     <configuration name="MyProject" type="DotNetProject" factoryName=".NET Project">
       <option name="EXE_PATH" value="" />
@@ -117,6 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1745722665267</updated>
       <workItem from="1745722666086" duration="1917000" />
+      <workItem from="1745803858529" duration="3300000" />
+      <workItem from="1745871284547" duration="109000" />
     </task>
     <task id="LOCAL-00001" summary="Lesson 13">
       <option name="closed" value="true" />
@@ -190,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1745778015635</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="Lesson 24">
+      <option name="closed" value="true" />
+      <created>1745778443442</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1745778443442</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -235,6 +238,7 @@
     <MESSAGE value="Lesson 21" />
     <MESSAGE value="Lesson 22" />
     <MESSAGE value="Lesson 23" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lesson 23" />
+    <MESSAGE value="Lesson 24" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lesson 24" />
   </component>
 </project>
