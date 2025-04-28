@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.ComponentModel.Design;
 using System.IO.Pipes;
 using System.Net.WebSockets;
 
@@ -9,25 +10,23 @@ namespace MyProject
     {
         static void Main()
         {
-            // Method Overloading
-
-            double total;
-
-            total = Multiply(2, 3, 4);
-
+            // Paranms keyword
+            
+            double total = CheckOut(3.99, 5.75, 15, 1.00, 10.25);
+            
             Console.WriteLine(total);
             Console.ReadKey(); 
         }
         
-        static double Multiply(double x, double y)
+        static double CheckOut(params double[] prices)
         {
-            //double z = x * y;
-            //return z;
-            return x * y;
-        }
-        static double Multiply(double a, double b, double c)
-        {
-            return a * b * c;
+            double total = 0;
+
+            foreach (double price in prices)
+            {
+                total += price;
+            }
+            return total;
         }
 
     } 
