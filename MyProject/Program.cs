@@ -11,41 +11,40 @@ namespace MyProject
     {
         static void Main()
         {
-            // Array of Objects
+            // Objects as Arguments
 
-            // Car[] garage = new Car[3];
+            Car car1 = new Car("Mustang", "Red");
 
-            // Car car1 = new Car("Mustang");
-            // Car car2 = new Car("Corvette");
-            // Car car3 = new Car("Lambo");
+            Car car2 = Copy(car1);
 
-            // garage[0] = car1;
-            // garage[1] = car2;
-            // garage[2] = car3;
+            ChangeColor(car1, "silver");
 
-            Car[] garage = {new Car("Mustang"), new Car("Corvette"), new Car("Lambo")};
-
-            // Console.WriteLine(garage[0].model);
-            // Console.WriteLine(garage[1].model);
-            // Console.WriteLine(garage[2].model);
-
-            foreach (Car car in garage) 
-            {
-                Console.WriteLine(car.model);
-            }
+            Console.WriteLine(car1.color + " " + car1.model);
+            Console.WriteLine(car2.color + " " + car2.model);
             
-
             Console.ReadKey(); 
+        }
+
+        public static void ChangeColor(Car car, String color)
+        {
+            car.color = color;
+        }
+
+        public static Car Copy(Car car)
+        {
+            return new Car(car.model, car.color);
         }
 
     }
     class Car
     {
         public String model;
+        public String color;
 
-        public Car(String model)
+        public Car(String model, String color)
         {
             this.model = model;
+            this.color = color;
         }
     }
 
