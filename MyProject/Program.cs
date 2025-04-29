@@ -11,37 +11,34 @@ namespace MyProject
     {
         static void Main()
         {
-            // Method Overriding
+            // ToString()
 
-            Dog dog = new Dog();
-            Cat cat = new Cat();
+            Car car = new Car("Chevy", "Corvette", 2022, "Blue");
 
-            dog.Speak();
-            cat.Speak();
+            //Console.WriteLine(car.ToString());
+            Console.WriteLine(car);
             
             Console.ReadKey(); 
         }
     }
 
-    class Animal 
+    class Car
     {
-        public virtual void Speak()
+        String make;
+        String model;
+        int year;
+        String color;
+
+        public Car(String make, String model, int year, String color)
         {
-            Console.WriteLine("The animal goes *brrr*");
+            this.make = make;
+            this.model = model;
+            this.year = year;
+            this.color = color;
         }
-    }
-    class Dog : Animal
-    {
-        public override void Speak()
+        public override string ToString()
         {
-            Console.WriteLine("The dog goes *woof*");
-        }
-    }
-    class Cat : Animal
-    {
-        public override void Speak()
-        {
-            Console.WriteLine("The cat goes *miau*");
+            return "This is a " + make + " " + model;
         }
     }
 }
