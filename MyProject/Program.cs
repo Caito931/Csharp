@@ -12,43 +12,41 @@ namespace MyProject
     {
         static void Main()
         {
-            // List of Objects
+            // Getters & Setters
 
-            List<Player> players = new List<Player>();
+            Car car = new Car(400);
 
-            Player player1 = new Player("Chad");
-            Player player2 = new Player("Steve");
-            Player player3 = new Player("Karen");
+            car.Speed = 100000000;
 
-            players.Add(player1);
-            players.Add(player2);
-            players.Add(player3);
-            
-            // players.Add(new Player("Chad"));
-            // players.Add(new Player("Steve"));
-            // players.Add(new Player("Karen"));
-
-            foreach (Player player in players)
-            {
-                Console.WriteLine(player);
-            }
+            Console.WriteLine(car.Speed);
 
             Console.ReadKey(); 
         }
     }
 
-    class Player
+    class Car
     {
-        public string username;
+        private int speed;
 
-        public Player(String username)
+        public Car(int speed)
         {
-            this.username = username;
+            Speed = speed;
         }
 
-        public override string ToString()
+        public int Speed
         {
-            return username;
+            get { return speed; } // read
+            set                   // writable
+            { 
+                if (value > 500)
+                {
+                    speed = 500; 
+                }
+                else 
+                {
+                    speed = value; 
+                }
+            }
         }
     }
 }
