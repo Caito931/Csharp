@@ -12,45 +12,43 @@ namespace MyProject
     {
         static void Main()
         {
-            // List
+            // List of Objects
 
-            // String[] food = new string[3];
+            List<Player> players = new List<Player>();
 
-            // food[0] = "pizza";
-            // food[1] = "hamburguer";
-            // food[2] = "hotdog";
+            Player player1 = new Player("Chad");
+            Player player2 = new Player("Steve");
+            Player player3 = new Player("Karen");
 
-            List<String> food = new List<String>();
+            players.Add(player1);
+            players.Add(player2);
+            players.Add(player3);
+            
+            // players.Add(new Player("Chad"));
+            // players.Add(new Player("Steve"));
+            // players.Add(new Player("Karen"));
 
-            // food.Add("fries");
-            food.Add("pizza");
-            food.Add("hamburguer");
-            food.Add("hotdog");
-            food.Add("fries");
-
-            // food.Remove("fries");
-            // food.Insert(0, "sushi");
-            // Console.WriteLine(food.Count);
-            // Console.WriteLine(food.IndexOf("pizza"));
-            // Console.WriteLine(food.LastIndexOf("fries"));
-            // Console.WriteLine(food.Contains("pizza"));
-            // food.Sort();
-            // food.Reverse();
-            // food.Clear();
-            String[] foodArray = food.ToArray();
-
-            foreach (String item in food)
+            foreach (Player player in players)
             {
-                Console.WriteLine(item);    
+                Console.WriteLine(player);
             }
-            // foreach (String item in foodArray)
-            // {
-            //     Console.WriteLine(item);    
-            // }
-
-            // Console.WriteLine(food[0]);
 
             Console.ReadKey(); 
+        }
+    }
+
+    class Player
+    {
+        public string username;
+
+        public Player(String username)
+        {
+            this.username = username;
+        }
+
+        public override string ToString()
+        {
+            return username;
         }
     }
 }
