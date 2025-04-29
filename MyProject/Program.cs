@@ -13,49 +13,27 @@ namespace MyProject
     {
         static void Main()
         {
-            // Enums
+            // Generic
 
-            //Console.WriteLine(Planets.Pluto + " is planet #" + (int)Planets.Pluto);
-            
-            String name = PlanetRadius.Earth.ToString();
-            int radius = (int)PlanetRadius.Earth;
-            double volume = Volume(PlanetRadius.Earth);
+            int[] intArray = {1, 2, 3};
+            double[] doubleArray = {1.0, 2.0, 3.0};
+            String[] stringArray = {"1", "2", "3"};
 
-            Console.WriteLine("planet: " + name);
-            Console.WriteLine("radius: " + radius + "km");
-            Console.WriteLine("volume: " + volume + "km^3");
+            displayElements(intArray);
+            displayElements(doubleArray);
+            displayElements(stringArray);
 
             Console.ReadKey(); 
         }
-        public static double Volume(PlanetRadius radius)
+        public static void displayElements<Thing>(Thing[] array)
         {
-            double volume = (4.0 / 3.0) * Math.PI * Math.Pow((int)radius, 3);
-            return volume;
+            foreach (Thing item in array)
+            {
+                Console.Write(item + " ");
+            }
+            Console.WriteLine();
         }
-    }
-    
-    enum Planets
-    {
-        Mercury = 1, 
-        Venus = 2, 
-        Earth = 3, 
-        Mars = 4, 
-        Jupiter = 5, 
-        Saturn = 6, 
-        Uranus = 7, 
-        Neptune = 8, 
-        Pluto = 9
-    }
-    enum PlanetRadius
-    {
-        Mercury = 2439, 
-        Venus = 6051, 
-        Earth = 6371, 
-        Mars = 3389, 
-        Jupiter = 69911, 
-        Saturn = 58232, 
-        Uranus = 25362, 
-        Neptune = 24622, 
-        Pluto = 1188
+
+
     }
 }
