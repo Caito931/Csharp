@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Threading;
 using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.IO.Pipes;
@@ -13,27 +14,41 @@ namespace MyProject
     {
         static void Main()
         {
-            // Generic
+            // Thread
 
-            int[] intArray = {1, 2, 3};
-            double[] doubleArray = {1.0, 2.0, 3.0};
-            String[] stringArray = {"1", "2", "3"};
+            Thread mainThread = Thread.CurrentThread;
+            mainThread.Name = "Main Thread";
+            //Console.WriteLine(mainThread.Name);
 
-            displayElements(intArray);
-            displayElements(doubleArray);
-            displayElements(stringArray);
+            Thread thread1 = new Thread(() => CountDown("Timer #1"));
+            Thread thread2 = new Thread(() => CountUp("Timer #2"));
+
+            thread1.Start();
+            thread2.Start();
+
+            Console.WriteLine(mainThread.Name + " is complete!");
 
             Console.ReadKey(); 
         }
-        public static void displayElements<Thing>(Thing[] array)
-        {
-            foreach (Thing item in array)
-            {
-                Console.Write(item + " ");
-            }
-            Console.WriteLine();
-        }
 
+        public static void CountDown(String name)
+        {
+            for (int i = 10; i >= 0; i--)
+            {
+                Console.WriteLine("Timer #1 : " + i + " seconds");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Timer #1 is complete!");
+        }
+        public static void CountUp(String name)
+        {
+            for (int i = 0; i <= 10; i++)
+            {
+                Console.WriteLine("Timer #2 : " + i + " seconds");
+                Thread.Sleep(1000);
+            }
+            Console.WriteLine("Timer #2 is complete!");
+        }
 
     }
 }
