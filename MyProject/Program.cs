@@ -11,41 +11,37 @@ namespace MyProject
     {
         static void Main()
         {
-            // Objects as Arguments
+            // Method Overriding
 
-            Car car1 = new Car("Mustang", "Red");
+            Dog dog = new Dog();
+            Cat cat = new Cat();
 
-            Car car2 = Copy(car1);
-
-            ChangeColor(car1, "silver");
-
-            Console.WriteLine(car1.color + " " + car1.model);
-            Console.WriteLine(car2.color + " " + car2.model);
+            dog.Speak();
+            cat.Speak();
             
             Console.ReadKey(); 
         }
-
-        public static void ChangeColor(Car car, String color)
-        {
-            car.color = color;
-        }
-
-        public static Car Copy(Car car)
-        {
-            return new Car(car.model, car.color);
-        }
-
     }
-    class Car
+
+    class Animal 
     {
-        public String model;
-        public String color;
-
-        public Car(String model, String color)
+        public virtual void Speak()
         {
-            this.model = model;
-            this.color = color;
+            Console.WriteLine("The animal goes *brrr*");
         }
     }
-
+    class Dog : Animal
+    {
+        public override void Speak()
+        {
+            Console.WriteLine("The dog goes *woof*");
+        }
+    }
+    class Cat : Animal
+    {
+        public override void Speak()
+        {
+            Console.WriteLine("The cat goes *miau*");
+        }
+    }
 }
