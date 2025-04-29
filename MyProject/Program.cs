@@ -11,22 +11,44 @@ namespace MyProject
     {
         static void Main()
         {
-            // Static
+            // Overloaded Constructors
 
-            Car car1 = new Car("Ford", "Mustang", 2022, "Red");
-            Car car2 = new Car("Chevy", "Corette", 2021, "Blue");
-            Car car3 = new Car("Toyota", "Corolla", 2025, "White");
-
-            car1.Drive();
-            car2.Drive();
-            car3.Drive();
-
-            Car.StartRace();
-            Console.WriteLine(Car.numberOfCars);
+            Pizza pizza = new Pizza("stuffed crust", "red sauce", "mozzarella");
 
             Console.ReadKey(); 
         }
 
     } 
+
+    class Pizza
+    {
+        String bread;
+        String sauce;
+        String cheese;
+        String topping;
+
+        public Pizza(String bread) 
+        {
+            this.bread = bread;
+        }
+        public Pizza(String bread, String sauce) 
+        {
+            this.bread = bread;
+            this.sauce = sauce;
+        }
+        public Pizza(String bread, String sauce, String cheese) 
+        {
+            this.bread = bread;
+            this.sauce = sauce;
+            this.cheese = cheese;
+        }
+        public Pizza(String bread, String sauce, String cheese, String topping) 
+        {
+            this.bread = bread;
+            this.sauce = sauce;
+            this.cheese = cheese;
+            this.topping = topping;
+        }
+    }
 
 }
