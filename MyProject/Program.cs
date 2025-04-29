@@ -11,34 +11,47 @@ namespace MyProject
     {
         static void Main()
         {
-            // ToString()
+            // Polymorphism
 
-            Car car = new Car("Chevy", "Corvette", 2022, "Blue");
+            Car car = new Car();
+            Bicycle bicycle = new Bicycle();
+            Boat boat = new Boat();
 
-            //Console.WriteLine(car.ToString());
-            Console.WriteLine(car);
+            // All in common
+            Vehicle[] vehicles = {car, bicycle, boat};
+
+            foreach (Vehicle vehicle in vehicles)
+            {
+                vehicle.Go();
+            }
             
             Console.ReadKey(); 
         }
     }
 
-    class Car
+    class Vehicle
     {
-        String make;
-        String model;
-        int year;
-        String color;
-
-        public Car(String make, String model, int year, String color)
+        public virtual void Go(){}
+    }
+    class Car : Vehicle
+    {
+        public override void Go()
         {
-            this.make = make;
-            this.model = model;
-            this.year = year;
-            this.color = color;
+            Console.WriteLine("The car is moving!");
         }
-        public override string ToString()
+    }
+    class Bicycle : Vehicle
+    {
+        public override void Go()
         {
-            return "This is a " + make + " " + model;
+            Console.WriteLine("The bicycle is moving!");
+        }
+    }
+    class Boat : Vehicle
+    {
+        public override void Go()
+        {
+            Console.WriteLine("The boat is moving!");
         }
     }
 }
