@@ -11,47 +11,52 @@ namespace MyProject
     {
         static void Main()
         {
-            // Polymorphism
+            // Interface
 
-            Car car = new Car();
-            Bicycle bicycle = new Bicycle();
-            Boat boat = new Boat();
+            Rabbit rabbit = new Rabbit();
+            Hawk hawk = new Hawk();
+            Fish fish = new Fish();
+            
+            rabbit.Flee();
+            hawk.Hunt();
 
-            // All in common
-            Vehicle[] vehicles = {car, bicycle, boat};
-
-            foreach (Vehicle vehicle in vehicles)
-            {
-                vehicle.Go();
-            }
+            fish.Flee();
+            fish.Hunt();
             
             Console.ReadKey(); 
         }
     }
-
-    class Vehicle
+    interface IPrey
     {
-        public virtual void Go(){}
+        void Flee();
     }
-    class Car : Vehicle
+    interface IPredator
     {
-        public override void Go()
+        void Hunt();
+    }
+    class Rabbit : IPrey
+    {
+        public void Flee()
         {
-            Console.WriteLine("The car is moving!");
+            Console.WriteLine("The rabbit runs away!");
         }
     }
-    class Bicycle : Vehicle
+    class Hawk : IPredator
     {
-        public override void Go()
+        public void Hunt()
         {
-            Console.WriteLine("The bicycle is moving!");
+            Console.WriteLine("The hawk is searching for food!");
         }
     }
-    class Boat : Vehicle
+    class Fish : IPrey, IPredator
     {
-        public override void Go()
+        public void Flee()
         {
-            Console.WriteLine("The boat is moving!");
+            Console.WriteLine("The fish swims away!");
+        }
+        public void Hunt()
+        {
+            Console.WriteLine("The fish is searching for smaller fish!");
         }
     }
 }
