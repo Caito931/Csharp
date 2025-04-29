@@ -1,5 +1,6 @@
 ﻿
 using System;
+using System.Collections.Generic;
 using System.ComponentModel.Design;
 using System.IO.Pipes;
 using System.Net.WebSockets;
@@ -11,52 +12,45 @@ namespace MyProject
     {
         static void Main()
         {
-            // Interface
+            // List
 
-            Rabbit rabbit = new Rabbit();
-            Hawk hawk = new Hawk();
-            Fish fish = new Fish();
-            
-            rabbit.Flee();
-            hawk.Hunt();
+            // String[] food = new string[3];
 
-            fish.Flee();
-            fish.Hunt();
-            
+            // food[0] = "pizza";
+            // food[1] = "hamburguer";
+            // food[2] = "hotdog";
+
+            List<String> food = new List<String>();
+
+            // food.Add("fries");
+            food.Add("pizza");
+            food.Add("hamburguer");
+            food.Add("hotdog");
+            food.Add("fries");
+
+            // food.Remove("fries");
+            // food.Insert(0, "sushi");
+            // Console.WriteLine(food.Count);
+            // Console.WriteLine(food.IndexOf("pizza"));
+            // Console.WriteLine(food.LastIndexOf("fries"));
+            // Console.WriteLine(food.Contains("pizza"));
+            // food.Sort();
+            // food.Reverse();
+            // food.Clear();
+            String[] foodArray = food.ToArray();
+
+            foreach (String item in food)
+            {
+                Console.WriteLine(item);    
+            }
+            // foreach (String item in foodArray)
+            // {
+            //     Console.WriteLine(item);    
+            // }
+
+            // Console.WriteLine(food[0]);
+
             Console.ReadKey(); 
-        }
-    }
-    interface IPrey
-    {
-        void Flee();
-    }
-    interface IPredator
-    {
-        void Hunt();
-    }
-    class Rabbit : IPrey
-    {
-        public void Flee()
-        {
-            Console.WriteLine("The rabbit runs away!");
-        }
-    }
-    class Hawk : IPredator
-    {
-        public void Hunt()
-        {
-            Console.WriteLine("The hawk is searching for food!");
-        }
-    }
-    class Fish : IPrey, IPredator
-    {
-        public void Flee()
-        {
-            Console.WriteLine("The fish swims away!");
-        }
-        public void Hunt()
-        {
-            Console.WriteLine("The fish is searching for smaller fish!");
         }
     }
 }
