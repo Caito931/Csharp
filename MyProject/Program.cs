@@ -12,13 +12,11 @@ namespace MyProject
     {
         static void Main()
         {
-            // Getters & Setters
+            // Auto Implemented Properties
 
-            Car car = new Car(400);
+            Car car = new Car("Porsche");
 
-            car.Speed = 100000000;
-
-            Console.WriteLine(car.Speed);
+            Console.WriteLine(car.Model);
 
             Console.ReadKey(); 
         }
@@ -26,27 +24,11 @@ namespace MyProject
 
     class Car
     {
-        private int speed;
+        public String Model { get; set; }
 
-        public Car(int speed)
+        public Car(String model)
         {
-            Speed = speed;
-        }
-
-        public int Speed
-        {
-            get { return speed; } // read
-            set                   // writable
-            { 
-                if (value > 500)
-                {
-                    speed = 500; 
-                }
-                else 
-                {
-                    speed = value; 
-                }
-            }
+            this.Model = model;
         }
     }
 }
