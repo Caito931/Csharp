@@ -11,44 +11,48 @@ namespace MyProject
     {
         static void Main()
         {
-            // Overloaded Constructors
+            // Inheritance
 
-            Pizza pizza = new Pizza("stuffed crust", "red sauce", "mozzarella");
+            Car car = new Car();
+            Bicycle bicycle = new Bicycle();
+            Boat boat = new Boat();
+
+            Console.WriteLine(car.speed);
+            Console.WriteLine(car.wheels);
+            car.go();
+
+            Console.WriteLine(bicycle.speed);
+            Console.WriteLine(bicycle.wheels);
+            bicycle.go();
+
+            Console.WriteLine(boat.speed);
+            Console.WriteLine(boat.wheels);
+            boat.go();
 
             Console.ReadKey(); 
         }
 
-    } 
-
-    class Pizza
+    }
+    class Vehicle
     {
-        String bread;
-        String sauce;
-        String cheese;
-        String topping;
+        public int speed = 0;
 
-        public Pizza(String bread) 
+        public void go()
         {
-            this.bread = bread;
+            Console.WriteLine("This vehicle is moving!");
         }
-        public Pizza(String bread, String sauce) 
-        {
-            this.bread = bread;
-            this.sauce = sauce;
-        }
-        public Pizza(String bread, String sauce, String cheese) 
-        {
-            this.bread = bread;
-            this.sauce = sauce;
-            this.cheese = cheese;
-        }
-        public Pizza(String bread, String sauce, String cheese, String topping) 
-        {
-            this.bread = bread;
-            this.sauce = sauce;
-            this.cheese = cheese;
-            this.topping = topping;
-        }
+    }
+    class Car : Vehicle
+    {
+        public int wheels = 4;
+    }
+    class Bicycle : Vehicle
+    {
+        public int wheels = 2;
+    }
+    class Boat : Vehicle
+    {
+        public int wheels = 0;
     }
 
 }
